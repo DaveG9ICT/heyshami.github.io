@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crush Confession</title>
+</head>
+<body>
+  <h1>Confession Time</h1>
+  <p>Hey there! I have something to tell you...</p>
+  <button onclick="displayMessage('yes')">Yes</button>
+  <button onclick="displayMessage('no')">No</button>
+  <div id="message"></div>
+
+  <script>
+    function displayMessage(choice) {
+      const messageDiv = document.getElementById('message');
+      if (choice === 'yes') {
+        messageDiv.innerHTML = "<p>Yay! I think you're amazing!</p>";
+      } else if (choice === 'no') {
+        messageDiv.innerHTML = "<p>That's okay! Thanks for checking this out!</p>";
+      }
+    }
+  </script>
+</body>
+</html>
